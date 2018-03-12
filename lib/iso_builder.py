@@ -205,6 +205,9 @@ class MockPungiIsoBuilder(object):
             '"@{}"'.format(group) for group in iso_repo_packages_groups]
         packages_to_download = [
             '"{}"'.format(package) for package in iso_repo_packages]
+
+        self.mock.run_command("--shell 'yum clean all'")
+
         mock_yum_command = (
             "--shell 'yumdownloader --config {config_file} "
             "--installroot {install_root} "
