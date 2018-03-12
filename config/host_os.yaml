@@ -2,41 +2,26 @@ build-images:
   automated_install_file: host-os.ks
   distro_repos:
   - name: base
-    url: http://mirror.centos.org/altarch/7/os/ppc64le/
+    url: http://vault.centos.org/altarch/7.2.1511/os/ppc64le/
     url_type: baseurl
   - name: epel
     url: https://mirrors.fedoraproject.org/mirrorlist?repo=epel-7&arch=ppc64le
     url_type: mirrorlist
   - name: extras
-    url: http://mirror.centos.org/altarch/7/extras/ppc64le/
+    url: http://vault.centos.org/altarch/7.2.1511/extras/ppc64le/
     url_type: baseurl
   - name: updates
-    url: http://mirror.centos.org/altarch/7/updates/ppc64le/
+    url: http://vault.centos.org/altarch/7.2.1511/updates/ppc64le/
     url_type: baseurl
   installable_environments:
-    OpenPOWER Host OS RAS:
-    - open-power-host-os-ras
-    OpenPOWER Host OS all:
-    - open-power-host-os-all
     OpenPOWER Host OS base:
     - open-power-host-os-base
-    OpenPOWER Host OS container:
-    - open-power-host-os-container
-    OpenPOWER Host OS virtualization:
-    - open-power-host-os-virt
-    OpenPOWER Host OS virtualization management:
-    - open-power-host-os-virt-management
   install_tree: False
-  iso: False
+  iso: True
   iso_name: Host_OS
   iso_repo_packages: []
   iso_repo_packages_groups:
-  - OpenPOWER Host OS all
   - OpenPOWER Host OS base
-  - OpenPOWER Host OS container
-  - OpenPOWER Host OS virtualization
-  - OpenPOWER Host OS virtualization management
-  - OpenPOWER Host OS RAS
   iso_version: ''
   mock_args: --enable-plugin=tmpfs --plugin-option=tmpfs:keep_mounted=True --plugin-option=tmpfs:max_fs_size=32g
     --plugin-option=tmpfs:required_ram_mb=39800 --verbose
