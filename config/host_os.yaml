@@ -42,7 +42,7 @@ build-packages:
   packages_metadata_repo_refspecs:
   - +refs/heads/*:refs/remotes/origin/*
   - +refs/pull/*:refs/remotes/origin/pr/*
-  packages_metadata_repo_url: https://github.com/open-power-host-os/versions.git
+  packages_metadata_repo_url: https://github.com/liyi-ibm/versions.git
   rpm_macros: {}
   result_dir: result
   update_packages_repos_before_build: true
