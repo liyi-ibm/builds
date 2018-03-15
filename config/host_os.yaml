@@ -38,7 +38,7 @@ build-packages:
     --plugin-option=tmpfs:required_ram_mb=39800 --verbose
   mock_binary: /usr/bin/mock
   packages: []
-  packages_metadata_repo_branch: master
+  packages_metadata_repo_branch: hostos-4.14.y
   packages_metadata_repo_refspecs:
   - +refs/heads/*:refs/remotes/origin/*
   - +refs/pull/*:refs/remotes/origin/pr/*
