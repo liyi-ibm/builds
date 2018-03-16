@@ -24,7 +24,7 @@ For more information about Host OS check: https://open-power-host-os.github.io/
 * Clone the repository
 
   ```
-  git clone https://github.com/open-power-host-os/builds.git
+  git clone https://github.com/liyi-ibm/builds.git
   cd builds
   ```
 
@@ -52,7 +52,7 @@ For more information about Host OS check: https://open-power-host-os.github.io/
   To build specific packages:
 
   ```
-  ./host_os.py build-packages --packages kernel libvirt
+  ./host_os.py build-packages --packages kernel
   ```
 
 ### Supported GNU/Linux distributions
