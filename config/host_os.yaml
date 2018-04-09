@@ -10,9 +10,6 @@ build-images:
   - name: extras
     url: http://vault.centos.org/altarch/7.2.1511/extras/ppc64le/
     url_type: baseurl
-  - name: updates
-    url: http://vault.centos.org/altarch/7.2.1511/updates/ppc64le/
-    url_type: baseurl
   installable_environments:
     OpenPOWER Host OS base:
     - open-power-host-os-base
