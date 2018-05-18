@@ -231,8 +231,9 @@ class MockPackageBuilder(package_builder.PackageBuilder):
 
         LOG.info("Copying RPMs from %s to %s" % (source_dir, target_dir))
         for source_file_name in os.listdir(source_dir):
-            if (source_file_name.endswith(".rpm")
-                    and not source_file_name.endswith(".src.rpm")):
+            #if (source_file_name.endswith(".rpm")
+            #        and not source_file_name.endswith(".src.rpm")):
+            if (source_file_name.endswith(".rpm")):
                 LOG.info("Copying RPM file: %s" % source_file_name)
                 source_file_path = os.path.join(source_dir, source_file_name)
                 target_file_path = os.path.join(target_dir, source_file_name)
